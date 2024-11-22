@@ -1,0 +1,9 @@
+{
+	"name": "adfharlanpichette",
+	"location": "australiaeast",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "223324ad-acff-4de6-a143-d05c2dc6b3c2",
+		"tenantId": "068d9fac-9ae9-4e43-bb81-07d01b287515"
+	}
+}
