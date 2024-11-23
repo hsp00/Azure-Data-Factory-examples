@@ -24,11 +24,4034 @@
 							"supportRFC5988": "true"
 						}
 					},
-					"enableStaging": false
+					"sink": {
+						"type": "DelimitedTextSink",
+						"storeSettings": {
+							"type": "AzureBlobStorageWriteSettings",
+							"copyBehavior": "FlattenHierarchy"
+						},
+						"formatSettings": {
+							"type": "DelimitedTextWriteSettings",
+							"quoteAllText": true,
+							"fileExtension": ".txt"
+						}
+					},
+					"enableStaging": false,
+					"translator": {
+						"type": "TabularTranslator",
+						"mappings": [
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-11-22']['1. open']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-11-22_1. open"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-11-22']['2. high']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-11-22_2. high"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-11-22']['3. low']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-11-22_3. low"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-11-22']['4. close']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-11-22_4. close"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-11-22']['5. volume']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-11-22_5. volume"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-11-21']['1. open']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-11-21_1. open"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-11-21']['2. high']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-11-21_2. high"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-11-21']['3. low']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-11-21_3. low"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-11-21']['4. close']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-11-21_4. close"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-11-21']['5. volume']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-11-21_5. volume"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-11-20']['1. open']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-11-20_1. open"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-11-20']['2. high']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-11-20_2. high"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-11-20']['3. low']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-11-20_3. low"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-11-20']['4. close']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-11-20_4. close"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-11-20']['5. volume']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-11-20_5. volume"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-11-19']['1. open']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-11-19_1. open"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-11-19']['2. high']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-11-19_2. high"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-11-19']['3. low']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-11-19_3. low"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-11-19']['4. close']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-11-19_4. close"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-11-19']['5. volume']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-11-19_5. volume"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-11-18']['1. open']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-11-18_1. open"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-11-18']['2. high']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-11-18_2. high"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-11-18']['3. low']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-11-18_3. low"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-11-18']['4. close']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-11-18_4. close"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-11-18']['5. volume']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-11-18_5. volume"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-11-15']['1. open']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-11-15_1. open"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-11-15']['2. high']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-11-15_2. high"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-11-15']['3. low']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-11-15_3. low"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-11-15']['4. close']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-11-15_4. close"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-11-15']['5. volume']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-11-15_5. volume"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-11-14']['1. open']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-11-14_1. open"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-11-14']['2. high']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-11-14_2. high"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-11-14']['3. low']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-11-14_3. low"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-11-14']['4. close']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-11-14_4. close"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-11-14']['5. volume']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-11-14_5. volume"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-11-13']['1. open']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-11-13_1. open"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-11-13']['2. high']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-11-13_2. high"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-11-13']['3. low']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-11-13_3. low"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-11-13']['4. close']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-11-13_4. close"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-11-13']['5. volume']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-11-13_5. volume"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-11-12']['1. open']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-11-12_1. open"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-11-12']['2. high']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-11-12_2. high"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-11-12']['3. low']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-11-12_3. low"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-11-12']['4. close']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-11-12_4. close"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-11-12']['5. volume']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-11-12_5. volume"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-11-11']['1. open']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-11-11_1. open"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-11-11']['2. high']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-11-11_2. high"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-11-11']['3. low']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-11-11_3. low"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-11-11']['4. close']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-11-11_4. close"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-11-11']['5. volume']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-11-11_5. volume"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-11-08']['1. open']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-11-08_1. open"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-11-08']['2. high']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-11-08_2. high"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-11-08']['3. low']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-11-08_3. low"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-11-08']['4. close']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-11-08_4. close"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-11-08']['5. volume']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-11-08_5. volume"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-11-07']['1. open']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-11-07_1. open"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-11-07']['2. high']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-11-07_2. high"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-11-07']['3. low']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-11-07_3. low"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-11-07']['4. close']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-11-07_4. close"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-11-07']['5. volume']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-11-07_5. volume"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-11-06']['1. open']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-11-06_1. open"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-11-06']['2. high']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-11-06_2. high"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-11-06']['3. low']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-11-06_3. low"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-11-06']['4. close']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-11-06_4. close"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-11-06']['5. volume']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-11-06_5. volume"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-11-05']['1. open']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-11-05_1. open"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-11-05']['2. high']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-11-05_2. high"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-11-05']['3. low']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-11-05_3. low"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-11-05']['4. close']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-11-05_4. close"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-11-05']['5. volume']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-11-05_5. volume"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-11-04']['1. open']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-11-04_1. open"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-11-04']['2. high']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-11-04_2. high"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-11-04']['3. low']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-11-04_3. low"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-11-04']['4. close']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-11-04_4. close"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-11-04']['5. volume']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-11-04_5. volume"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-11-01']['1. open']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-11-01_1. open"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-11-01']['2. high']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-11-01_2. high"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-11-01']['3. low']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-11-01_3. low"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-11-01']['4. close']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-11-01_4. close"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-11-01']['5. volume']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-11-01_5. volume"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-10-31']['1. open']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-10-31_1. open"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-10-31']['2. high']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-10-31_2. high"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-10-31']['3. low']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-10-31_3. low"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-10-31']['4. close']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-10-31_4. close"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-10-31']['5. volume']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-10-31_5. volume"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-10-30']['1. open']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-10-30_1. open"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-10-30']['2. high']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-10-30_2. high"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-10-30']['3. low']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-10-30_3. low"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-10-30']['4. close']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-10-30_4. close"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-10-30']['5. volume']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-10-30_5. volume"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-10-29']['1. open']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-10-29_1. open"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-10-29']['2. high']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-10-29_2. high"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-10-29']['3. low']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-10-29_3. low"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-10-29']['4. close']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-10-29_4. close"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-10-29']['5. volume']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-10-29_5. volume"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-10-28']['1. open']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-10-28_1. open"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-10-28']['2. high']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-10-28_2. high"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-10-28']['3. low']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-10-28_3. low"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-10-28']['4. close']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-10-28_4. close"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-10-28']['5. volume']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-10-28_5. volume"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-10-25']['1. open']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-10-25_1. open"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-10-25']['2. high']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-10-25_2. high"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-10-25']['3. low']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-10-25_3. low"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-10-25']['4. close']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-10-25_4. close"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-10-25']['5. volume']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-10-25_5. volume"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-10-24']['1. open']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-10-24_1. open"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-10-24']['2. high']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-10-24_2. high"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-10-24']['3. low']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-10-24_3. low"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-10-24']['4. close']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-10-24_4. close"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-10-24']['5. volume']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-10-24_5. volume"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-10-23']['1. open']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-10-23_1. open"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-10-23']['2. high']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-10-23_2. high"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-10-23']['3. low']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-10-23_3. low"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-10-23']['4. close']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-10-23_4. close"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-10-23']['5. volume']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-10-23_5. volume"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-10-22']['1. open']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-10-22_1. open"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-10-22']['2. high']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-10-22_2. high"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-10-22']['3. low']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-10-22_3. low"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-10-22']['4. close']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-10-22_4. close"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-10-22']['5. volume']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-10-22_5. volume"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-10-21']['1. open']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-10-21_1. open"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-10-21']['2. high']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-10-21_2. high"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-10-21']['3. low']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-10-21_3. low"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-10-21']['4. close']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-10-21_4. close"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-10-21']['5. volume']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-10-21_5. volume"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-10-18']['1. open']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-10-18_1. open"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-10-18']['2. high']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-10-18_2. high"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-10-18']['3. low']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-10-18_3. low"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-10-18']['4. close']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-10-18_4. close"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-10-18']['5. volume']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-10-18_5. volume"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-10-17']['1. open']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-10-17_1. open"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-10-17']['2. high']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-10-17_2. high"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-10-17']['3. low']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-10-17_3. low"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-10-17']['4. close']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-10-17_4. close"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-10-17']['5. volume']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-10-17_5. volume"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-10-16']['1. open']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-10-16_1. open"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-10-16']['2. high']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-10-16_2. high"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-10-16']['3. low']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-10-16_3. low"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-10-16']['4. close']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-10-16_4. close"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-10-16']['5. volume']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-10-16_5. volume"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-10-15']['1. open']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-10-15_1. open"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-10-15']['2. high']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-10-15_2. high"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-10-15']['3. low']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-10-15_3. low"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-10-15']['4. close']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-10-15_4. close"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-10-15']['5. volume']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-10-15_5. volume"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-10-14']['1. open']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-10-14_1. open"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-10-14']['2. high']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-10-14_2. high"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-10-14']['3. low']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-10-14_3. low"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-10-14']['4. close']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-10-14_4. close"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-10-14']['5. volume']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-10-14_5. volume"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-10-11']['1. open']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-10-11_1. open"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-10-11']['2. high']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-10-11_2. high"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-10-11']['3. low']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-10-11_3. low"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-10-11']['4. close']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-10-11_4. close"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-10-11']['5. volume']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-10-11_5. volume"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-10-10']['1. open']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-10-10_1. open"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-10-10']['2. high']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-10-10_2. high"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-10-10']['3. low']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-10-10_3. low"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-10-10']['4. close']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-10-10_4. close"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-10-10']['5. volume']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-10-10_5. volume"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-10-09']['1. open']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-10-09_1. open"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-10-09']['2. high']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-10-09_2. high"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-10-09']['3. low']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-10-09_3. low"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-10-09']['4. close']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-10-09_4. close"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-10-09']['5. volume']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-10-09_5. volume"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-10-08']['1. open']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-10-08_1. open"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-10-08']['2. high']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-10-08_2. high"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-10-08']['3. low']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-10-08_3. low"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-10-08']['4. close']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-10-08_4. close"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-10-08']['5. volume']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-10-08_5. volume"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-10-07']['1. open']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-10-07_1. open"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-10-07']['2. high']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-10-07_2. high"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-10-07']['3. low']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-10-07_3. low"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-10-07']['4. close']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-10-07_4. close"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-10-07']['5. volume']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-10-07_5. volume"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-10-04']['1. open']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-10-04_1. open"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-10-04']['2. high']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-10-04_2. high"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-10-04']['3. low']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-10-04_3. low"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-10-04']['4. close']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-10-04_4. close"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-10-04']['5. volume']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-10-04_5. volume"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-10-03']['1. open']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-10-03_1. open"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-10-03']['2. high']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-10-03_2. high"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-10-03']['3. low']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-10-03_3. low"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-10-03']['4. close']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-10-03_4. close"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-10-03']['5. volume']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-10-03_5. volume"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-10-02']['1. open']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-10-02_1. open"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-10-02']['2. high']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-10-02_2. high"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-10-02']['3. low']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-10-02_3. low"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-10-02']['4. close']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-10-02_4. close"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-10-02']['5. volume']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-10-02_5. volume"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-10-01']['1. open']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-10-01_1. open"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-10-01']['2. high']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-10-01_2. high"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-10-01']['3. low']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-10-01_3. low"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-10-01']['4. close']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-10-01_4. close"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-10-01']['5. volume']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-10-01_5. volume"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-09-30']['1. open']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-09-30_1. open"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-09-30']['2. high']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-09-30_2. high"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-09-30']['3. low']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-09-30_3. low"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-09-30']['4. close']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-09-30_4. close"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-09-30']['5. volume']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-09-30_5. volume"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-09-27']['1. open']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-09-27_1. open"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-09-27']['2. high']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-09-27_2. high"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-09-27']['3. low']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-09-27_3. low"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-09-27']['4. close']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-09-27_4. close"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-09-27']['5. volume']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-09-27_5. volume"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-09-26']['1. open']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-09-26_1. open"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-09-26']['2. high']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-09-26_2. high"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-09-26']['3. low']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-09-26_3. low"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-09-26']['4. close']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-09-26_4. close"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-09-26']['5. volume']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-09-26_5. volume"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-09-25']['1. open']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-09-25_1. open"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-09-25']['2. high']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-09-25_2. high"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-09-25']['3. low']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-09-25_3. low"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-09-25']['4. close']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-09-25_4. close"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-09-25']['5. volume']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-09-25_5. volume"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-09-24']['1. open']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-09-24_1. open"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-09-24']['2. high']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-09-24_2. high"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-09-24']['3. low']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-09-24_3. low"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-09-24']['4. close']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-09-24_4. close"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-09-24']['5. volume']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-09-24_5. volume"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-09-23']['1. open']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-09-23_1. open"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-09-23']['2. high']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-09-23_2. high"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-09-23']['3. low']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-09-23_3. low"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-09-23']['4. close']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-09-23_4. close"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-09-23']['5. volume']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-09-23_5. volume"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-09-20']['1. open']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-09-20_1. open"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-09-20']['2. high']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-09-20_2. high"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-09-20']['3. low']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-09-20_3. low"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-09-20']['4. close']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-09-20_4. close"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-09-20']['5. volume']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-09-20_5. volume"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-09-19']['1. open']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-09-19_1. open"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-09-19']['2. high']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-09-19_2. high"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-09-19']['3. low']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-09-19_3. low"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-09-19']['4. close']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-09-19_4. close"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-09-19']['5. volume']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-09-19_5. volume"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-09-18']['1. open']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-09-18_1. open"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-09-18']['2. high']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-09-18_2. high"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-09-18']['3. low']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-09-18_3. low"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-09-18']['4. close']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-09-18_4. close"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-09-18']['5. volume']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-09-18_5. volume"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-09-17']['1. open']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-09-17_1. open"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-09-17']['2. high']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-09-17_2. high"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-09-17']['3. low']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-09-17_3. low"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-09-17']['4. close']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-09-17_4. close"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-09-17']['5. volume']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-09-17_5. volume"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-09-16']['1. open']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-09-16_1. open"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-09-16']['2. high']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-09-16_2. high"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-09-16']['3. low']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-09-16_3. low"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-09-16']['4. close']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-09-16_4. close"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-09-16']['5. volume']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-09-16_5. volume"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-09-13']['1. open']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-09-13_1. open"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-09-13']['2. high']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-09-13_2. high"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-09-13']['3. low']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-09-13_3. low"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-09-13']['4. close']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-09-13_4. close"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-09-13']['5. volume']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-09-13_5. volume"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-09-12']['1. open']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-09-12_1. open"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-09-12']['2. high']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-09-12_2. high"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-09-12']['3. low']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-09-12_3. low"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-09-12']['4. close']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-09-12_4. close"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-09-12']['5. volume']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-09-12_5. volume"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-09-11']['1. open']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-09-11_1. open"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-09-11']['2. high']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-09-11_2. high"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-09-11']['3. low']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-09-11_3. low"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-09-11']['4. close']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-09-11_4. close"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-09-11']['5. volume']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-09-11_5. volume"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-09-10']['1. open']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-09-10_1. open"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-09-10']['2. high']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-09-10_2. high"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-09-10']['3. low']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-09-10_3. low"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-09-10']['4. close']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-09-10_4. close"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-09-10']['5. volume']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-09-10_5. volume"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-09-09']['1. open']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-09-09_1. open"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-09-09']['2. high']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-09-09_2. high"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-09-09']['3. low']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-09-09_3. low"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-09-09']['4. close']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-09-09_4. close"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-09-09']['5. volume']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-09-09_5. volume"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-09-06']['1. open']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-09-06_1. open"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-09-06']['2. high']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-09-06_2. high"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-09-06']['3. low']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-09-06_3. low"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-09-06']['4. close']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-09-06_4. close"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-09-06']['5. volume']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-09-06_5. volume"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-09-05']['1. open']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-09-05_1. open"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-09-05']['2. high']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-09-05_2. high"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-09-05']['3. low']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-09-05_3. low"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-09-05']['4. close']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-09-05_4. close"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-09-05']['5. volume']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-09-05_5. volume"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-09-04']['1. open']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-09-04_1. open"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-09-04']['2. high']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-09-04_2. high"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-09-04']['3. low']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-09-04_3. low"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-09-04']['4. close']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-09-04_4. close"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-09-04']['5. volume']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-09-04_5. volume"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-09-03']['1. open']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-09-03_1. open"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-09-03']['2. high']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-09-03_2. high"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-09-03']['3. low']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-09-03_3. low"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-09-03']['4. close']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-09-03_4. close"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-09-03']['5. volume']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-09-03_5. volume"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-08-30']['1. open']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-08-30_1. open"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-08-30']['2. high']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-08-30_2. high"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-08-30']['3. low']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-08-30_3. low"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-08-30']['4. close']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-08-30_4. close"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-08-30']['5. volume']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-08-30_5. volume"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-08-29']['1. open']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-08-29_1. open"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-08-29']['2. high']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-08-29_2. high"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-08-29']['3. low']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-08-29_3. low"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-08-29']['4. close']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-08-29_4. close"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-08-29']['5. volume']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-08-29_5. volume"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-08-28']['1. open']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-08-28_1. open"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-08-28']['2. high']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-08-28_2. high"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-08-28']['3. low']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-08-28_3. low"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-08-28']['4. close']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-08-28_4. close"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-08-28']['5. volume']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-08-28_5. volume"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-08-27']['1. open']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-08-27_1. open"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-08-27']['2. high']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-08-27_2. high"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-08-27']['3. low']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-08-27_3. low"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-08-27']['4. close']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-08-27_4. close"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-08-27']['5. volume']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-08-27_5. volume"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-08-26']['1. open']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-08-26_1. open"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-08-26']['2. high']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-08-26_2. high"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-08-26']['3. low']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-08-26_3. low"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-08-26']['4. close']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-08-26_4. close"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-08-26']['5. volume']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-08-26_5. volume"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-08-23']['1. open']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-08-23_1. open"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-08-23']['2. high']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-08-23_2. high"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-08-23']['3. low']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-08-23_3. low"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-08-23']['4. close']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-08-23_4. close"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-08-23']['5. volume']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-08-23_5. volume"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-08-22']['1. open']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-08-22_1. open"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-08-22']['2. high']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-08-22_2. high"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-08-22']['3. low']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-08-22_3. low"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-08-22']['4. close']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-08-22_4. close"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-08-22']['5. volume']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-08-22_5. volume"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-08-21']['1. open']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-08-21_1. open"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-08-21']['2. high']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-08-21_2. high"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-08-21']['3. low']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-08-21_3. low"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-08-21']['4. close']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-08-21_4. close"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-08-21']['5. volume']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-08-21_5. volume"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-08-20']['1. open']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-08-20_1. open"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-08-20']['2. high']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-08-20_2. high"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-08-20']['3. low']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-08-20_3. low"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-08-20']['4. close']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-08-20_4. close"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-08-20']['5. volume']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-08-20_5. volume"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-08-19']['1. open']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-08-19_1. open"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-08-19']['2. high']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-08-19_2. high"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-08-19']['3. low']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-08-19_3. low"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-08-19']['4. close']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-08-19_4. close"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-08-19']['5. volume']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-08-19_5. volume"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-08-16']['1. open']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-08-16_1. open"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-08-16']['2. high']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-08-16_2. high"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-08-16']['3. low']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-08-16_3. low"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-08-16']['4. close']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-08-16_4. close"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-08-16']['5. volume']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-08-16_5. volume"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-08-15']['1. open']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-08-15_1. open"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-08-15']['2. high']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-08-15_2. high"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-08-15']['3. low']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-08-15_3. low"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-08-15']['4. close']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-08-15_4. close"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-08-15']['5. volume']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-08-15_5. volume"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-08-14']['1. open']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-08-14_1. open"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-08-14']['2. high']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-08-14_2. high"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-08-14']['3. low']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-08-14_3. low"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-08-14']['4. close']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-08-14_4. close"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-08-14']['5. volume']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-08-14_5. volume"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-08-13']['1. open']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-08-13_1. open"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-08-13']['2. high']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-08-13_2. high"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-08-13']['3. low']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-08-13_3. low"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-08-13']['4. close']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-08-13_4. close"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-08-13']['5. volume']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-08-13_5. volume"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-08-12']['1. open']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-08-12_1. open"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-08-12']['2. high']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-08-12_2. high"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-08-12']['3. low']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-08-12_3. low"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-08-12']['4. close']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-08-12_4. close"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-08-12']['5. volume']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-08-12_5. volume"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-08-09']['1. open']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-08-09_1. open"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-08-09']['2. high']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-08-09_2. high"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-08-09']['3. low']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-08-09_3. low"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-08-09']['4. close']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-08-09_4. close"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-08-09']['5. volume']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-08-09_5. volume"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-08-08']['1. open']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-08-08_1. open"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-08-08']['2. high']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-08-08_2. high"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-08-08']['3. low']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-08-08_3. low"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-08-08']['4. close']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-08-08_4. close"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-08-08']['5. volume']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-08-08_5. volume"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-08-07']['1. open']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-08-07_1. open"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-08-07']['2. high']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-08-07_2. high"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-08-07']['3. low']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-08-07_3. low"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-08-07']['4. close']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-08-07_4. close"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-08-07']['5. volume']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-08-07_5. volume"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-08-06']['1. open']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-08-06_1. open"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-08-06']['2. high']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-08-06_2. high"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-08-06']['3. low']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-08-06_3. low"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-08-06']['4. close']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-08-06_4. close"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-08-06']['5. volume']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-08-06_5. volume"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-08-05']['1. open']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-08-05_1. open"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-08-05']['2. high']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-08-05_2. high"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-08-05']['3. low']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-08-05_3. low"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-08-05']['4. close']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-08-05_4. close"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-08-05']['5. volume']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-08-05_5. volume"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-08-02']['1. open']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-08-02_1. open"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-08-02']['2. high']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-08-02_2. high"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-08-02']['3. low']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-08-02_3. low"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-08-02']['4. close']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-08-02_4. close"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-08-02']['5. volume']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-08-02_5. volume"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-08-01']['1. open']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-08-01_1. open"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-08-01']['2. high']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-08-01_2. high"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-08-01']['3. low']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-08-01_3. low"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-08-01']['4. close']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-08-01_4. close"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-08-01']['5. volume']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-08-01_5. volume"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-07-31']['1. open']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-07-31_1. open"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-07-31']['2. high']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-07-31_2. high"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-07-31']['3. low']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-07-31_3. low"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-07-31']['4. close']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-07-31_4. close"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-07-31']['5. volume']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-07-31_5. volume"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-07-30']['1. open']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-07-30_1. open"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-07-30']['2. high']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-07-30_2. high"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-07-30']['3. low']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-07-30_3. low"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-07-30']['4. close']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-07-30_4. close"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-07-30']['5. volume']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-07-30_5. volume"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-07-29']['1. open']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-07-29_1. open"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-07-29']['2. high']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-07-29_2. high"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-07-29']['3. low']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-07-29_3. low"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-07-29']['4. close']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-07-29_4. close"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-07-29']['5. volume']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-07-29_5. volume"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-07-26']['1. open']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-07-26_1. open"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-07-26']['2. high']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-07-26_2. high"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-07-26']['3. low']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-07-26_3. low"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-07-26']['4. close']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-07-26_4. close"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-07-26']['5. volume']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-07-26_5. volume"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-07-25']['1. open']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-07-25_1. open"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-07-25']['2. high']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-07-25_2. high"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-07-25']['3. low']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-07-25_3. low"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-07-25']['4. close']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-07-25_4. close"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-07-25']['5. volume']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-07-25_5. volume"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-07-24']['1. open']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-07-24_1. open"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-07-24']['2. high']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-07-24_2. high"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-07-24']['3. low']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-07-24_3. low"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-07-24']['4. close']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-07-24_4. close"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-07-24']['5. volume']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-07-24_5. volume"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-07-23']['1. open']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-07-23_1. open"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-07-23']['2. high']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-07-23_2. high"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-07-23']['3. low']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-07-23_3. low"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-07-23']['4. close']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-07-23_4. close"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-07-23']['5. volume']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-07-23_5. volume"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-07-22']['1. open']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-07-22_1. open"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-07-22']['2. high']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-07-22_2. high"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-07-22']['3. low']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-07-22_3. low"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-07-22']['4. close']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-07-22_4. close"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-07-22']['5. volume']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-07-22_5. volume"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-07-19']['1. open']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-07-19_1. open"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-07-19']['2. high']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-07-19_2. high"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-07-19']['3. low']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-07-19_3. low"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-07-19']['4. close']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-07-19_4. close"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-07-19']['5. volume']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-07-19_5. volume"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-07-18']['1. open']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-07-18_1. open"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-07-18']['2. high']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-07-18_2. high"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-07-18']['3. low']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-07-18_3. low"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-07-18']['4. close']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-07-18_4. close"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-07-18']['5. volume']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-07-18_5. volume"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-07-17']['1. open']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-07-17_1. open"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-07-17']['2. high']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-07-17_2. high"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-07-17']['3. low']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-07-17_3. low"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-07-17']['4. close']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-07-17_4. close"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-07-17']['5. volume']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-07-17_5. volume"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-07-16']['1. open']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-07-16_1. open"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-07-16']['2. high']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-07-16_2. high"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-07-16']['3. low']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-07-16_3. low"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-07-16']['4. close']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-07-16_4. close"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-07-16']['5. volume']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-07-16_5. volume"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-07-15']['1. open']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-07-15_1. open"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-07-15']['2. high']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-07-15_2. high"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-07-15']['3. low']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-07-15_3. low"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-07-15']['4. close']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-07-15_4. close"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-07-15']['5. volume']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-07-15_5. volume"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-07-12']['1. open']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-07-12_1. open"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-07-12']['2. high']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-07-12_2. high"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-07-12']['3. low']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-07-12_3. low"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-07-12']['4. close']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-07-12_4. close"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-07-12']['5. volume']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-07-12_5. volume"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-07-11']['1. open']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-07-11_1. open"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-07-11']['2. high']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-07-11_2. high"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-07-11']['3. low']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-07-11_3. low"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-07-11']['4. close']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-07-11_4. close"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-07-11']['5. volume']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-07-11_5. volume"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-07-10']['1. open']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-07-10_1. open"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-07-10']['2. high']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-07-10_2. high"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-07-10']['3. low']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-07-10_3. low"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-07-10']['4. close']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-07-10_4. close"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-07-10']['5. volume']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-07-10_5. volume"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-07-09']['1. open']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-07-09_1. open"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-07-09']['2. high']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-07-09_2. high"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-07-09']['3. low']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-07-09_3. low"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-07-09']['4. close']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-07-09_4. close"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-07-09']['5. volume']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-07-09_5. volume"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-07-08']['1. open']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-07-08_1. open"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-07-08']['2. high']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-07-08_2. high"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-07-08']['3. low']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-07-08_3. low"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-07-08']['4. close']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-07-08_4. close"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-07-08']['5. volume']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-07-08_5. volume"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-07-05']['1. open']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-07-05_1. open"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-07-05']['2. high']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-07-05_2. high"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-07-05']['3. low']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-07-05_3. low"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-07-05']['4. close']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-07-05_4. close"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Time Series (Daily)']['2024-07-05']['5. volume']"
+								},
+								"sink": {
+									"name": "Time Series (Daily)_2024-07-05_5. volume"
+								}
+							}
+						]
+					}
 				},
 				"inputs": [
 					{
 						"referenceName": "vantage_api",
+						"type": "DatasetReference"
+					}
+				],
+				"outputs": [
+					{
+						"referenceName": "blobstore",
 						"type": "DatasetReference"
 					}
 				]
